@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class BlogService {
-url = 'https://blog-420.firebaseio.com/blog';
+url = 'https://angularinfinityscroll.firebaseio.com/blog';
   constructor(private http:HttpClient) { }
 
   addPost(data){

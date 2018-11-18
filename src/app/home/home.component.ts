@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../blog.service';
 import { Blog } from '../blog.model';
+import {  getSummary } from '../functions';
 
 @Component({
   selector: 'app-home',
@@ -34,9 +35,18 @@ getPost(){
     console.log(this.posts)
   })
 }
-  deleteBlog(key){
+  deletePost(key){
+    
     this.service.deletePost(key).subscribe(res=>{
       this.getPost();
     })
+  }
+
+  getDescription(description:string){
+   if(description){
+    return  getSummary(description); 
+   }
+    
+  
   }
 }

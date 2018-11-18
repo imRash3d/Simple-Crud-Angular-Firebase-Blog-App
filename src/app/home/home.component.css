@@ -1,0 +1,17 @@
+
+post-info {
+   
+    color: #403e3e!important;
+}
+
+img {
+    max-height: 350px;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a {
+    margin-left: 10px ;
+}
